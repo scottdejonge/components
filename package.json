@@ -1,0 +1,44 @@
+{
+  "name": "T2Blue",
+  "description": "",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@code.bigfish.tv:t2blue.git"
+  },
+  "dependencies": {
+    "jquery": "2.1.3",
+    "bigfishtv-turret": "2.0.12",
+    "less": "2.2.0"
+  },
+  "devDependencies": {
+    "watch": "^0.13.0",
+    "browserify": "8.1.3",
+    "browserify-shim": "3.8.2",
+    "uglify-js": " 2.4.16",
+    "browser-sync": "2.0.1"
+  },
+  "scripts": {
+    "sync": "browser-sync start --proxy \"dev.circa\" --files \"generated/styles/*.css\"",
+    "watch:styles": "watch \"npm run build:styles\" \"styles\"",
+    "watch:scripts": "watch \"npm run build:scripts\" \"scripts\"",
+    "watch": "npm run watch:styles & npm run watch:scripts & npm run sync",
+    "build:styles": "lessc -s --include-path=\"node_modules/bigfishtv-turret\" styles/styles.less > generated/styles/styles.css",
+    "build:scripts": "browserify scripts/scripts.js > generated/scripts/scripts.js",
+    "build": "npm run build:styles && npm run build:scripts",
+    "deploy:styles": "lessc -x --include-path=\"node_modules/bigfishtv-turret\" styles/styles.less > generated/styles/styles.css",
+    "deploy:scripts": "browserify scripts/scripts.js | uglifyjs -c > generated/scripts/scripts.js",
+    "deploy": "npm run deploy:styles && npm run deploy:scripts"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browser": {
+
+  },
+  "browserify-shim": {
+
+  }
+}

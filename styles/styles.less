@@ -1,0 +1,78 @@
+// Turret
+@import './turret.less';
+@import './definitions.less';
+
+
+// Mixins
+.uppercase() {
+	letter-spacing: 0.05rem;
+	text-transform: uppercase;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+	width: 10px;  // vertical scrollbars
+	height: 10px; // horizontal scrollbars
+}
+
+::-webkit-scrollbar-track {
+	background: @light;
+}
+
+::-webkit-scrollbar-thumb {
+	background: @primary;
+}
+
+// Selection
+::selection {
+	background-color: @primary;
+	color: @white;
+}
+
+// Body
+body {
+	.font-size(1.4);
+	background: @white;
+	letter-spacing: 0.01rem;
+}
+
+
+// Button
+button,
+.button {
+
+	svg {
+		margin-left: 12px;
+		vertical-align: middle;
+
+		* {
+			fill: @dark;
+			.transition(all @transition-fast ease-in-out);
+		}
+	}
+
+	&:hover,
+	&:focus {
+
+		svg * {
+			fill: @white;
+		}
+	}
+}
+
+.button-inverse {
+
+	svg * {
+		fill: @white;
+	}
+
+	&:hover,
+	&:focus {
+		color: @dark;
+		background: @white;
+		
+		svg * {
+			fill: @dark;
+		}
+	}
+}
