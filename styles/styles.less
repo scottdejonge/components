@@ -9,6 +9,31 @@ body {
 	letter-spacing: 0.01rem;
 }
 
+
+// Atomic List
+.atomic-design {
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin: 50px;
+		list-style: none;
+
+		img {
+			display: block;
+		}
+	}
+}
+
+
+// Glyph
+.glyph {
+	.square(150px);
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+// Section
 .section {
 	display: table;
 	width: 100vw;
@@ -23,6 +48,8 @@ body {
 	}
 }
 
+
+// Section Inner
 .section-inner {
 	display: table-cell;
 	width: 100%;
@@ -30,27 +57,65 @@ body {
 	vertical-align: middle;
 }
 
+// Section Content
 .section-content {
 	margin: 0 auto;
-	max-width: 600px;
-	text-align: center;
-}
+	max-width: 800px;
 
-.section-links {
-	margin: 0 auto;
-	max-width: 1024px;
-}
-
-.atomic-design {
-	text-align: center;
-
-	li {
-		display: inline-block;
-		margin: 20px;
-		list-style: none;
-
-		img {
-			display: block;
-		}
+	h1, h2, h3, h4, h5, h6 {
+		text-align: center;
 	}
+}
+
+//Sectiom Inverse
+.section-inverse {
+	
+	h1, h2, h3, h4, h5, h6, ul li, ol li, p, th, td {
+		color: @white;
+	}
+}
+
+
+// Section Themes
+.section-hello {
+	background: #D84556;
+}
+
+.section-roadmap {
+	background: #1ABC9C;
+
+	h3 {
+		margin: 0;
+		text-align: left;
+	}
+}
+
+.section-state-of-web {
+	background: #8E44AD;
+
+	ul li {
+		list-style: none;
+		margin-left: 0;
+	}
+}
+
+.section-patterns {
+	background: #F1C40F;
+}
+
+.section-atomic {
+	background: #E6E9ED;
+}
+
+.section-resources {
+	color: @white;
+	background: #434A53;
+
+	.section-content {
+		max-width: 1024px;
+	}
+}
+
+.section-questions {
+	background: #E9573F;
 }

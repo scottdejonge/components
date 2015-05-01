@@ -1,0 +1,11 @@
+<svg width="114" height="114" viewBox="0 0 114 114" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+  <title>ioT</title>
+  <g transform="translate(1 1)" sketch:type="MSShapeGroup" stroke-linecap="round" stroke-width="2" stroke="#57286B" fill="none">
+    <circle cx="56" cy="56" r="56"></circle>
+    <path d="M74.003 81c7.285-5.575 11.997-14.449 11.997-24.444 0-16.875-13.431-30.556-30-30.556-16.569 0-30 13.68-30 30.556 0 9.995 4.712 18.87 11.997 24.444"></path>
+    <path d="M50 13h12"></path>
+    <path d="M50 48h12"></path>
+    <path d="M44 56h24"></path>
+    <circle cx="56" cy="82" r="4"></circle>
+  </g>
+</svg>

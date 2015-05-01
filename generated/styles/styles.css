@@ -1123,7 +1123,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 50px 0px;
+  margin: 0px 0px 50px;
   padding: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
@@ -1141,12 +1141,12 @@ h6 small {
   color: #c9c9c9;
 }
 h1 {
-  font-size: 64px;
-  font-size: 6.4rem;
+  font-size: 72px;
+  font-size: 7.2rem;
 }
 h2 {
-  font-size: 36px;
-  font-size: 3.6rem;
+  font-size: 42px;
+  font-size: 4.2rem;
 }
 h3 {
   font-size: 24px;
@@ -1201,9 +1201,9 @@ blockquote {
 blockquote p {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-weight: 100;
+  font-size: 40px;
+  font-size: 4rem;
   font-style: normal;
   line-height: 1.5;
   color: #21bcd7;
@@ -1222,9 +1222,9 @@ blockquote cite {
   margin: 35px 0px;
   padding: 0px 30px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-weight: 100;
+  font-size: 40px;
+  font-size: 4rem;
   border: solid #21bcd7;
   border-width: 0px 0px 0px 5px;
 }
@@ -4187,16 +4187,16 @@ table thead tr th {
   padding: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 20px;
+  font-size: 2rem;
   color: #404040;
   text-align: left;
   text-transform: none;
 }
 table tbody tr td {
   padding: 10px;
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 20px;
+  font-size: 2rem;
   color: #404040;
   line-height: 1.5;
   vertical-align: middle;
@@ -4350,6 +4350,23 @@ body {
   background: #ffffff;
   letter-spacing: 0.01rem;
 }
+.atomic-design {
+  text-align: center;
+}
+.atomic-design li {
+  display: inline-block;
+  margin: 50px;
+  list-style: none;
+}
+.atomic-design li img {
+  display: block;
+}
+.glyph {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin-bottom: 50px;
+}
 .section {
   display: table;
   width: 100vw;
@@ -4363,21 +4380,59 @@ body {
 }
 .section-content {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 800px;
+}
+.section-content h1,
+.section-content h2,
+.section-content h3,
+.section-content h4,
+.section-content h5,
+.section-content h6 {
   text-align: center;
 }
-.section-links {
-  margin: 0 auto;
+.section-inverse h1,
+.section-inverse h2,
+.section-inverse h3,
+.section-inverse h4,
+.section-inverse h5,
+.section-inverse h6,
+.section-inverse ul li,
+.section-inverse ol li,
+.section-inverse p,
+.section-inverse th,
+.section-inverse td {
+  color: #ffffff;
+}
+.section-hello {
+  background: #D84556;
+}
+.section-roadmap {
+  background: #1ABC9C;
+}
+.section-roadmap h3 {
+  margin: 0;
+  text-align: left;
+}
+.section-state-of-web {
+  background: #8E44AD;
+}
+.section-state-of-web ul li {
+  list-style: none;
+  margin-left: 0;
+}
+.section-patterns {
+  background: #F1C40F;
+}
+.section-atomic {
+  background: #E6E9ED;
+}
+.section-resources {
+  color: #ffffff;
+  background: #434A53;
+}
+.section-resources .section-content {
   max-width: 1024px;
 }
-.atomic-design {
-  text-align: center;
-}
-.atomic-design li {
-  display: inline-block;
-  margin: 20px;
-  list-style: none;
-}
-.atomic-design li img {
-  display: block;
+.section-questions {
+  background: #E9573F;
 }
