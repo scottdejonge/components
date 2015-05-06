@@ -9,6 +9,9 @@ body {
 	letter-spacing: 0.01rem;
 }
 
+p {
+	margin: 35px 0px;
+}
 
 // Atomic List
 .atomic-design {
@@ -60,17 +63,33 @@ body {
 // Section Content
 .section-content {
 	margin: 0 auto;
-	max-width: 800px;
+	max-width: 1024px;
 
 	h1, h2, h3, h4, h5, h6 {
 		text-align: center;
 	}
+
+	h4 {
+		margin: 35px 0px;
+	}
+}
+
+.section-content-small {
+	max-width: 600px;
+}
+
+.section-content-large {
+	max-width: 1280px;
+}
+
+.section-content-extra-large {
+	max-width: 1600px;
 }
 
 //Sectiom Inverse
 .section-inverse {
 	
-	h1, h2, h3, h4, h5, h6, ul li, ol li, p, th, td {
+	h1, h2, h3, h4, h5, h6, ul li, ol li, p, th, td, a, a:visited, cite {
 		color: @white;
 	}
 }
@@ -107,6 +126,14 @@ body {
 	background: #E6E9ED;
 }
 
+.section-dark {
+	background: @dark;
+
+	h1, h2, h3, h4, h5, h6, ul li, ol li, p, th, td, a, a:visited, cite {
+		color: @white;
+	}
+}
+
 .section-resources {
 	color: @white;
 	background: #434A53;
@@ -118,4 +145,42 @@ body {
 
 .section-questions {
 	background: #E9573F;
+}
+
+.card {
+	padding: 20px;
+	background: @white;
+
+	.media {
+		margin-bottom: 20px;
+	}
+}
+
+.card-title,
+.card-content {
+	margin: 20px 0px !important;
+	text-align: left !important;
+	color: @dark !important;
+}
+
+.card-title {
+	.font-size(1.8);
+}
+
+.card-content {
+	.font-size(1.4);
+}
+
+.item {
+	margin-bottom: 20px;
+
+	h3 {
+		margin: 20px 0px !important;
+		text-align: left !important;
+	}
+
+	p {
+		margin: 20px 0px !important;
+		.font-size(1.6);
+	}
 }

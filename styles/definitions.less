@@ -217,7 +217,7 @@
 
 //Headings
 @headings: h1, h2, h3, h4, h5, h6;
-@headings-margin: 0px 0px 50px;
+@headings-margin: 0px 0px 35px;
 @headings-font-family: @bold-font-family;
 @headings-font-weight: @bold-font-weight;
 @headings-color: @body-color;
@@ -232,7 +232,7 @@
 @h1-font-size: 7.2;
 @h2-font-size: 4.2;
 @h3-font-size: 2.4;
-@h4-font-size: 1.4;
+@h4-font-size: 1.8;
 @h5-font-size: 1.2;
 @h6-font-size: 1;
 
@@ -281,13 +281,13 @@
 @blockquote-quote-color: @primary;
 
 //Blockquote Cite
-@blockquote-cite-margin: 10px 0px;
+@blockquote-cite-margin: 35px 0px 0px;
 @blockquote-cite-font-family: @regular-font-family;
 @blockquote-cite-font-weight: @regular-font-family;
 @blockquote-cite-font-size: @font-size-medium;
 @blockquote-cite-font-style: normal;
 @blockquote-cite-color: @blockquote-quote-color;
-@blockquote-cite-text-align: right;
+@blockquote-cite-text-align: center;
 
 
 /*
@@ -423,7 +423,7 @@
 @input-font-size: @font-size-medium;
 @input-line-height: @line-height;
 @input-background: @white;
-@input-border: 1px solid @input-border-color;
+@input-border: none;
 @input-border-color: @grey;
 @input-border-radius: @border-radius;
 @input-search-border-radius: 20px;
@@ -570,17 +570,17 @@
 @button-height: 40px;
 @button-font-family: @bold-font-family;
 @button-font-weight: @bold-font-weight;
-@button-font-size: 1.4;
-@button-color: @dark-grey;
+@button-font-size: 1.2;
+@button-color: @dark;
 @button-line-height: 1;
 @button-text-align: center;
 @button-text-transform: uppercase;
-@button-background: transparent;
-@button-border: 2px solid @dark;
+@button-background: @grey;
+@button-border: none;
 
 //Button Hover
-@button-hover-color: @white;
-@button-hover-background: @dark;
+@button-hover-color: darken(@button-color, 5%);
+@button-hover-background: darken(@button-background, 5%);
 @button-hover-border: @button-border;
 
 //Button Sizes
@@ -609,11 +609,11 @@
 
 //Button Primary
 @button-primary-color: @white;
-@button-primary-background: @primary;
-@button-primary-border: 1px solid darken(@primary, 5%);
+@button-primary-background: @dark;
+@button-primary-border: none;
 @button-primary-hover-color: @button-primary-color;
-@button-primary-hover-background: darken(@primary, 10%);
-@button-primary-hover-border: 1px solid darken(@primary, 15%);
+@button-primary-hover-background: darken(@button-primary-background, 10%);
+@button-primary-hover-border: none;
 
 //Button Secondary
 @button-secondary-color: @white;
