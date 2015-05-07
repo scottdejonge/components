@@ -63,6 +63,7 @@ p {
 // Section Content
 .section-content {
 	margin: 0 auto;
+	width: 100%;
 	max-width: 1024px;
 
 	h1, h2, h3, h4, h5, h6 {
@@ -96,7 +97,7 @@ p {
 
 
 // Section Themes
-.section-hello {
+.section-introduction {
 	background: #D84556;
 }
 
@@ -134,21 +135,21 @@ p {
 	}
 }
 
-.section-resources {
-	color: @white;
-	background: #434A53;
-
-	.section-content {
-		max-width: 1024px;
-	}
+.section-takeaway-points {
+	background: #2980B9;
 }
 
 .section-questions {
-	background: #E9573F;
+	background: #331E54;
+}
+
+.section-resources {
+	background: #ECF0F1;
 }
 
 .card {
 	padding: 20px;
+	margin-bottom: 20px;
 	background: @white;
 
 	.media {
@@ -169,18 +170,4 @@ p {
 
 .card-content {
 	.font-size(1.4);
-}
-
-.item {
-	margin-bottom: 20px;
-
-	h3 {
-		margin: 20px 0px !important;
-		text-align: left !important;
-	}
-
-	p {
-		margin: 20px 0px !important;
-		.font-size(1.6);
-	}
 }

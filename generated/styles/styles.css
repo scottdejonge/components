@@ -778,13 +778,13 @@ img.responsive {
   color: #69c3dd !important;
 }
 .text-primary {
-  color: #21bcd7 !important;
+  color: #2980b9 !important;
 }
 .text-secondary {
-  color: #3a303b !important;
+  color: #c9c9c9 !important;
 }
 .text-tertiary {
-  color: #ea332e !important;
+  color: #404040 !important;
 }
 .text-dark {
   color: #404040 !important;
@@ -826,13 +826,13 @@ img.responsive {
   background: #69c3dd !important;
 }
 .background-primary {
-  background: #21bcd7 !important;
+  background: #2980b9 !important;
 }
 .background-secondary {
-  background: #3a303b !important;
+  background: #c9c9c9 !important;
 }
 .background-tertiary {
-  background: #ea332e !important;
+  background: #404040 !important;
 }
 .background-dark {
   background: #404040 !important;
@@ -1183,7 +1183,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: #21bcd7;
+  color: #2980b9;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
@@ -1192,7 +1192,7 @@ a:focus {
   color: #404040;
 }
 a:visited:not(.button) {
-  color: #21bcd7;
+  color: #2980b9;
 }
 blockquote {
   margin: 35px 0px;
@@ -1206,7 +1206,7 @@ blockquote p {
   font-size: 4rem;
   font-style: normal;
   line-height: 1.5;
-  color: #21bcd7;
+  color: #2980b9;
 }
 blockquote cite {
   display: block;
@@ -1215,7 +1215,7 @@ blockquote cite {
   font-size: 18px;
   font-size: 1.8rem;
   font-style: normal;
-  color: #21bcd7;
+  color: #2980b9;
   text-align: center;
 }
 .pullout {
@@ -1225,7 +1225,7 @@ blockquote cite {
   font-weight: 100;
   font-size: 40px;
   font-size: 4rem;
-  border: solid #21bcd7;
+  border: solid #2980b9;
   border-width: 0px 0px 0px 5px;
 }
 hr {
@@ -2350,14 +2350,14 @@ form fieldset {
   display: block;
   margin: 0;
   padding: 20px;
-  border: 1px solid #21bcd7;
+  border: 1px solid #2980b9;
 }
 form fieldset legend {
   display: inline-block;
   padding: 10px;
   font-size: 18px;
   font-size: 1.8rem;
-  color: #21bcd7;
+  color: #2980b9;
 }
 .form-message {
   margin: 15px 0px;
@@ -2399,8 +2399,8 @@ form fieldset legend {
   opacity: 0;
 }
 .control input:checked ~ .control-indicator {
-  background: #21bcd7;
-  border: 1px solid #21bcd7;
+  background: #2980b9;
+  border: 1px solid #2980b9;
 }
 .control input:checked ~ .control-label {
   color: #404040;
@@ -2435,7 +2435,7 @@ form fieldset legend {
   width: 16px;
   height: 16px;
   line-height: 1rem;
-  color: #21bcd7;
+  color: #2980b9;
   text-align: center;
   background-color: #ffffff;
   background-size: 50% 50%;
@@ -4034,7 +4034,7 @@ button.info:focus,
 }
 .button-text:hover,
 .button-text:focus {
-  color: #21bcd7;
+  color: #2980b9;
 }
 .button-primary {
   color: #ffffff;
@@ -4049,25 +4049,25 @@ button.info:focus,
 }
 .button-secondary {
   color: #ffffff;
-  background: #3a303b;
-  border: 1px solid #2c252d;
+  background: #c9c9c9;
+  border: 1px solid #bcbcbc;
 }
 .button-secondary:hover,
 .button-secondary:focus {
   color: #ffffff;
-  background: #1e191f;
-  border: 1px solid #110e11;
+  background: #b0b0b0;
+  border: 1px solid #a3a3a3;
 }
 .button-tertiary {
   color: #ffffff;
-  background: #ea332e;
-  border: 1px solid #e71d17;
+  background: #404040;
+  border: 1px solid #333333;
 }
 .button-tertiary:hover,
 .button-tertiary:focus {
   color: #ffffff;
-  background: #d01a15;
-  border: 1px solid #e71d17;
+  background: #272727;
+  border: 1px solid #333333;
 }
 .button-border {
   color: #404040;
@@ -4096,7 +4096,7 @@ button.info:focus,
 figure {
   margin: 0;
   padding: 15px;
-  border: 1px solid #21bcd7;
+  border: 1px solid #2980b9;
 }
 figure figcaption {
   text-align: center;
@@ -4245,7 +4245,7 @@ table.table-block {
     left: 15px;
     width: 100%;
     white-space: nowrap;
-    color: #21bcd7;
+    color: #2980b9;
   }
   table.table-responsive td:before:first-child {
     display: none;
@@ -4383,6 +4383,7 @@ p {
 }
 .section-content {
   margin: 0 auto;
+  width: 100%;
   max-width: 1024px;
 }
 .section-content h1,
@@ -4421,7 +4422,7 @@ p {
 .section-inverse cite {
   color: #ffffff;
 }
-.section-hello {
+.section-introduction {
   background: #D84556;
 }
 .section-roadmap {
@@ -4463,18 +4464,18 @@ p {
 .section-dark cite {
   color: #ffffff;
 }
-.section-resources {
-  color: #ffffff;
-  background: #434A53;
-}
-.section-resources .section-content {
-  max-width: 1024px;
+.section-takeaway-points {
+  background: #2980B9;
 }
 .section-questions {
-  background: #E9573F;
+  background: #331E54;
+}
+.section-resources {
+  background: #ECF0F1;
 }
 .card {
   padding: 20px;
+  margin-bottom: 20px;
   background: #ffffff;
 }
 .card .media {
@@ -4493,16 +4494,4 @@ p {
 .card-content {
   font-size: 14px;
   font-size: 1.4rem;
-}
-.item {
-  margin-bottom: 20px;
-}
-.item h3 {
-  margin: 20px 0px !important;
-  text-align: left !important;
-}
-.item p {
-  margin: 20px 0px !important;
-  font-size: 16px;
-  font-size: 1.6rem;
 }

@@ -12,11 +12,11 @@
 	</head>
 	<body>
 
-		<!-- 1.0 Hello -->
-		<section class="section section-inverse section-hello">
+		<!-- 1.0 Introduction -->
+		<section class="section section-inverse section-introduction">
 			<div class="section-inner">
-				<div class="section-content">
-					<h1>Hello</h1>
+				<div class="section-content section-content-large text-center">
+					<h1>Designing Components for the web</h1>
 				</div>
 			</div>
 		</section>
@@ -24,10 +24,10 @@
 		<!-- 2.0 Roadmap -->
 		<section class="section section-inverse section-roadmap">
 			<div class="section-inner">
-				<div class="section-content section-content-small">
+				<div class="section-content">
 					<h2>Roadmap</h2>
 					<div class="row">
-						<div class="column-1-2 gutter-bottom">
+						<div class="column-1-3 gutter-bottom">
 							<h3>State of the Web</h3>
 							<ul>
 								<li>Device Breakdown</li>
@@ -35,7 +35,7 @@
 								<li>Responsive Principles</li>
 							</ul>
 						</div>
-						<div class="column-1-2 gutter-bottom">
+						<div class="column-1-3 gutter-bottom">
 							<h3>Patterns</h3>
 							<ul>
 								<li>Introducing Patterns</li>
@@ -43,17 +43,7 @@
 								<li>Pattern Libraries</li>
 							</ul>
 						</div>
-					</div>
-					<div class="row">
-						<div class="column-1-2 gutter-bottom">
-							<h3>Style Guides</h3>
-							<ul>
-								<li>Style Guides</li>
-								<li>Style Guide Types</li>
-								<li>Examples</li>
-							</ul>
-						</div>
-						<div class="column-1-2 gutter-bottom">
+						<div class="column-1-3 gutter-bottom">
 							<h3>Atomic Design</h3>
 							<ul>
 								<li>Introducing Atomic Design</li>
@@ -130,7 +120,7 @@
 						<h2>Screen Fragmentation</h2>
 						<p class="lead">Selected screen resolutions from 300+ mobile, tablet, laptop, and desktop screen resolutions.</p>
 						<img class="responsive" src="assets/images/devices/devices.svg">
-						<p><strong>NOTE:</strong> This does not include viewport sizes.</p>
+						<p><strong>NOTE:</strong> This does not include viewport (browser window) sizes.</p>
 					</div>
 				</div>
 			</section>
@@ -139,7 +129,7 @@
 			<section class="section section-inverse section-state-of-web">
 				<div class="section-inner">
 					<div class="section-content text-center">
-						<h2>Responsive &ne; "Desktop" &amp; "Mobile"</h2>
+						<h2>Responsive Web Design</h2>
 						<blockquote>
 							<p>Responsive Web Design is an approach to creating websites that can <strong>respond to ALL known web browsing devices</strong>, with content delivery and <strong>UI interaction optimized</strong> to the greatest degree possible for <strong>ALL visitors</strong>.</p>
 							<cite>Kezz Bracey &mdash; <a href="http://webdesign.tutsplus.com/articles/the-state-of-responsive-web-design--cms-22878">TutsPlus</a></cite>
@@ -164,9 +154,8 @@
 				<div class="section-inner">
 					<div class="section-content section-content-extra-large text-center">
 						<h2>Responsive</h2>
-						<p class="lead">Responsive = Responds to all Sizes.</p>
+						<p class="lead">Responsive = respond to any orientation, and screen or viewport size.</p>
 						<img class="responsive" src="assets/images/devices/responsive.svg">
-						<p><strong>NOTE:</strong> This does not include viewport sizes.</p>
 					</div>
 				</div>
 			</section>
@@ -418,33 +407,49 @@
 								<button class="button" type="submit">Filter</button>
 							</span>
 						</div>
-						<div class="row item">
-							<div class="column-1-5">
-								<div class="media media-1"></div>
-							</div>
-							<div class="column-4-5">
-								<h3 class="text-left">Item Title</h3>
-								<p>Item Description</p>
-							</div>
-						</div>
-						<div class="row item">
-							<div class="column-1-5">
-								<div class="media media-1"></div>
-							</div>
-							<div class="column-4-5">
-								<h3 class="text-left">Item Title</h3>
-								<p>Item Description</p>
+		
+						<div class="card">
+							<div class="row">
+								<div class="column-1-5">
+									<div class="media media-1 no-margin"></div>
+								</div>
+								<div class="column-4-5">
+									<h3 class="card-title">Card Title</h3>
+									<p class="card-content">Card Content</p>
+									<button class="button-primary">Primary Action</button>
+									<button>Secondary Action</button>
+								</div>
 							</div>
 						</div>
-						<div class="row item">
-							<div class="column-1-5">
-								<div class="media media-1"></div>
-							</div>
-							<div class="column-4-5">
-								<h3 class="text-left">Item Title</h3>
-								<p>Item Description</p>
+
+						<div class="card">
+							<div class="row">
+								<div class="column-1-5">
+									<div class="media media-1 no-margin"></div>
+								</div>
+								<div class="column-4-5">
+									<h3 class="card-title">Card Title</h3>
+									<p class="card-content">Card Content</p>
+									<button class="button-primary">Primary Action</button>
+									<button>Secondary Action</button>
+								</div>
 							</div>
 						</div>
+
+						<div class="card">
+							<div class="row">
+								<div class="column-1-5">
+									<div class="media media-1 no-margin"></div>
+								</div>
+								<div class="column-4-5">
+									<h3 class="card-title">Card Title</h3>
+									<p class="card-content">Card Content</p>
+									<button class="button-primary">Primary Action</button>
+									<button>Secondary Action</button>
+								</div>
+							</div>
+						</div>
+					
 					</div>
 				</div>
 			</section>
@@ -484,53 +489,18 @@
 				</div>
 			</section>
 
-		<!-- 6.0 Resources -->
-		<section class="section section-inverse section-resources">
+		<!-- 6.0 Takeaway Points -->
+		<section class="section section-inverse section-takeaway-points">
 			<div class="section-inner">
-				<div class="section-content">
-					<h2>Resources</h2>
-					<table class="table table-block table-border table-responsive">
-						<thead>
-							<tr>
-								<th>Title</th>
-								<th>Link</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Pattern Lab</td>
-								<td><a href="http://patternlab.io/">http://patternlab.io/</a></td>
-							</tr>
-							<tr>
-								<td>About Style Guides</td>
-								<td><a href="http://bradfrost.com/blog/post/style-guides/">http://bradfrost.com/blog/post/style-guides/</a></td>
-							</tr>
-							<tr>
-								<td>Style Guides</td>
-								<td><a href="http://styleguides.io/">http://styleguides.io/</a></td>
-							</tr>
-							<tr>
-								<td>There is no Fold</td>
-								<td><a href="http://www.lukew.com/ff/entry.asp?1946">http://www.lukew.com/ff/entry.asp?1946</a></td>
-							</tr>
-							<tr>
-								<td>TITLE</td>
-								<td><a href="URL">URL</a></td>
-							</tr>
-							<tr>
-								<td>TITLE</td>
-								<td><a href="URL">URL</a></td>
-							</tr>
-							<tr>
-								<td>TITLE</td>
-								<td><a href="URL">URL</a></td>
-							</tr>
-							<tr>
-								<td>TITLE</td>
-								<td><a href="URL">URL</a></td>
-							</tr>
-						</tbody>
-					</table>
+				<div class="section-content">	
+					<h2>Takeaway Points</h2>
+					<ul>
+						<li class="lead">The web is a medium, not a fixed browsing technology</li>
+						<li class="lead">Reliance on viewport sizes or ratios is problematic</li>
+						<li class="lead">Effective responsive web design stems from designing for worst case first</li>
+						<li class="lead">Design "Content First" and "Mobile First" with reusable, robust, responsive patterns</li>
+						<li class="lead">Atomic Design provides a method for effective "bottom-up" web design</li>
+					</ul>
 				</div>
 			</div>
 		</section>
@@ -538,8 +508,76 @@
 		<!-- 7.0 Questions -->
 		<section class="section section-inverse section-questions">
 			<div class="section-inner">
-				<div class="section-content">	
-					<h1>Questions?</h1>
+				<div class="section-content text-center">
+					<h2>Questions</h2>
+					<p class="lead">Where do you see patterns being implemented in web design?</p>
+					<p class="lead">How could you apply an Atomic Design workflow to web design?</p>
+					<p class="lead">Your Questions</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- 8.0 Resources -->
+		<section class="section section-resources">
+			<div class="section-inner">
+				<div class="section-content section-content-extra-large">
+					<h2>Resources</h2>
+					<table class="table table-block table-border table-responsive">
+						<thead>
+							<tr>
+								<th>Title</th>
+								<th>Description</th>
+								<th>Link</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Designer News</td>
+								<td>Latest in web design</td>
+								<td><a href="https://news.layervault.com/">https://news.layervault.com/</a></td>
+							</tr>
+							<tr>
+								<td>Pattern Lab</td>
+								<td>Design Atomic Design Sytems</td>
+								<td><a href="http://patternlab.io/">http://patternlab.io/</a></td>
+							</tr>
+							<tr>
+								<td>Responsive Patterns</td>
+								<td>A collection of patterns and modules for responsive designs</td>
+								<td><a href="http://bradfrost.github.io/this-is-responsive/patterns.html">http://bradfrost.github.io/this-is-responsive/patterns.html</a></td>
+							</tr>
+							<tr>
+								<td>Style Guides</td>
+								<td>Website Style Guide Resources</td>
+								<td><a href="http://styleguides.io/">http://styleguides.io/</a></td>
+							</tr>
+							<tr>
+								<td>Design Pattern Libraries</td>
+								<td>Design language using a pattern library</td>
+								<td><a href="http://www.slideshare.net/brianpeppler/design-pattern-libraries">http://www.slideshare.net/brianpeppler/design-pattern-libraries</a></td>
+							</tr>
+							<tr>
+								<td>Defining Mobile</td>
+								<td>How people interact with mobile devices</td>
+								<td><a href="http://www.lukew.com/ff/entry.asp?1944">http://www.lukew.com/ff/entry.asp?1944</a></td>
+							</tr>
+							<tr>
+								<td>There is no Fold</td>
+								<td>Designing for viewport height</td>
+								<td><a href="http://www.lukew.com/ff/entry.asp?1946">http://www.lukew.com/ff/entry.asp?1946</a></td>
+							</tr>
+							<tr>
+								<td>Obvious Always Wins</td>
+								<td>Avoiding hiding critical navigation</td>
+								<td><a href="http://www.lukew.com/ff/entry.asp?1945">http://www.lukew.com/ff/entry.asp?1945</a></td>
+							</tr>
+							<tr>
+								<td>WTF Mobile Web</td>
+								<td>Broken mobile/responsive websites</td>
+								<td><a href="http://wtfmobileweb.com/">http://wtfmobileweb.com/</a></td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</section>
