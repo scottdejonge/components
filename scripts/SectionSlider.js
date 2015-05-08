@@ -34,11 +34,11 @@ function activateKeyboardNavigation() {
 		if (event.isDefaultPrevented()) return;
 		switch (event.keyCode) {
 			case 40: // DOWN
+			case 32: // SPACEBAR
 				event.preventDefault();
 				nextPage();
 				break;
 			case 38: // UP
-			case 32: // SPACEBAR
 				event.preventDefault();
 				previousPage();
 				break;
